@@ -1,4 +1,5 @@
 import csv
+import json
 
 
 def create_csv(filename: str, column_names: [str]):
@@ -8,7 +9,7 @@ def create_csv(filename: str, column_names: [str]):
     :param column_names:
     :return:
     """
-    with open(filename, 'w', newline='') as csvfile:
+    with open(filename, 'w', newline='',  encoding='utf-8') as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=column_names)
         writer.writeheader()
 
@@ -21,6 +22,11 @@ def add_dict_rows(filename: str, dict_data: dict, column_names: [str]):
     :param column_names:列名称, 列表形式
     :return:
     """
-    with open(filename, 'a+', newline='') as csvfile:
+    with open(filename, 'a+', newline='',  encoding='utf-8') as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=column_names)
         writer.writerow(dict_data)
+
+
+def read_json(filename: str):
+    with open(filename) as f:
+        return json.load(f)
