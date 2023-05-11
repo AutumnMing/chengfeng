@@ -2,3 +2,5 @@
 *.xml
 *.pyc
 config
+data
+*.iml
