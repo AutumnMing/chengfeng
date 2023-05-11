@@ -1,6 +1,7 @@
 
 *.xml
 *.pyc
-config
-data
+config\*
+data\*
 *.iml
+*.csv
