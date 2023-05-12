@@ -1,9 +1,9 @@
 
 *.xml
 *.pyc
-config\*
-data\*
+config/*
+data/*
 *.iml
 *.csv
-.idea\*
-config/chengfeng.json
+.idea/*
+
