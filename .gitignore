@@ -6,3 +6,4 @@ data\*
 *.iml
 *.csv
 .idea\*
+config/chengfeng.json
