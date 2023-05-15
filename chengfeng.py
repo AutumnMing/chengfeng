@@ -35,9 +35,9 @@ if __name__ == '__main__':
     with open('./config/chengfeng.json') as f:
         cf = load(f)
     url = gen_url(cf['base_url'], cf['params'])
-    
-    res_characters = get_character_list(character_url=url)
-    for character in parse_character(characters=res_characters):
-        add_dict_rows(filename, character, column_names)
-        print(character)
-    sleep(60)
+    while True:
+        res_characters = get_character_list(character_url=url)
+        for character in parse_character(characters=res_characters):
+            add_dict_rows(filename, character, column_names)
+            print(character)
+        sleep(60)
