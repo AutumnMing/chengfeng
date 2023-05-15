@@ -6,4 +6,4 @@ data/*
 *.iml
 *.csv
 .idea/*
-
+__pycache__/*
