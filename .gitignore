@@ -7,3 +7,4 @@ data/*
 *.csv
 .idea/*
 __pycache__/*
+weibo-crawler/
